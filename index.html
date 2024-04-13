@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Under Maintenance</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-    }
+<html>
 
-    h1 {
-      font-size: 3em;
-      margin-top: 0;
-    }
+<head><style>
+.button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style></head>
 
-    p {
-      font-size: 1.5em;
-    }
-  </style>
-</head>
 <body>
-  <h1>Website Under Maintenance</h1>
-  <p>We are currently under maintenance and will be back soon. Thank you for your patience.</p>
-  <p>Please check back later or follow us on social media for updates.</p>
+
+<br/><center>
+<h1><p id='print'>RanDom</p></h1>
+
+<button class="button" onclick="generateString(6)">Get</button>
+</center><br/>
+
+<script>
+const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+function generateString(length) {
+    let result = ' ';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+	document.getElementById("print").innerHTML = result;
+}
+</script>
+
 </body>
+
 </html>
