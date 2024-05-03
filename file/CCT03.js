@@ -2,7 +2,7 @@
 
 {
   "question": "After an earthquake disrupting business operations, which document contains the procedures required to return business to normal operation?",
-  "options": ["", "A) The Dienster Recovery Plan", "B) The Business Impact Plan", "C) The Business Continuity Plan", "D) The Business Ieptalyst"],
+  "options": ["", "A) The Disaster Recovery Plan", "B) The Business Impact Plan", "C) The Business Continuity Plan", "D) The Business Ieptalyst"],
   "correctAnswer": "A"
 },
 {
